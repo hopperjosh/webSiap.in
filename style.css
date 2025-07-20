@@ -425,27 +425,49 @@ body {
 }
 /* ...existing code... */
 
-/* Responsive tombol untuk layar HP */
 @media (max-width: 600px) {
   .btn,
   .card-button,
   .fitur-ai,
   .fitur-card,
-  .fitur-damn {
-    padding: 10px 20px;
-    font-size: 14px;
-    width: 120px;
+  .fitur-damn,
+  button,
+  input,
+  .search-bar,
+  .logo a {
+    padding: 6px 10px;
+    font-size: 12px;
+    width: 90px;
     height: auto;
   }
-  .card-button {
-    width: 120px;
-    height: 120px;
-  }
+  .card-button,
   .fitur-card,
   .fitur-ai,
   .fitur-damn {
+    width: 90px;
+    height: 40px;
+    padding: 6px;
+  }
+  .search-bar input {
+    font-size: 12px;
+    padding: 6px;
+  }
+  .logo {
+    height: 80px;
     width: 120px;
-    height: 60px;
-    padding: 10px;
+    font-size: 12px;
+    padding: 4px;
+  }
+  .icons img {
+    width: 28px;
+    height: 28px;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .hero p,
+  .fitur-card span,
+  .card-button span {
+    font-size: 12px;
   }
 }
