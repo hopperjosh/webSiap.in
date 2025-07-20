@@ -311,8 +311,9 @@ body {
 
 .card-button .corner-icon {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 28%;
+  left: 40%;
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
 }
