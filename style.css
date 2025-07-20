@@ -293,7 +293,7 @@ body {
   cursor: pointer;
 }
 .card-button {
-  position: center;
+  position: relative;
   width: 200px;
   height: 200px;
   background: #f9d65c; /* kuning */
@@ -311,9 +311,9 @@ body {
 
 .card-button .corner-icon {
   position: absolute;
-  top: 42%;
-  left: 35%;
-  transform: translate(-50%, -50%);
+  top: 8px;
+  left: 8px;
+  transform: none;
   width: 40px;
   height: 40px;
 }
