@@ -1,0 +1,261 @@
+* {
+  margin: 0px
+}
+
+.bruh{
+  display: flex;          /* Aktifkan flexbox */
+  margin: 0%;
+  align-items: center;    /* Sejajarkan vertikal */;  /* Ruang antar elemen */
+  background: #617ea4;    /* Contoh warna nav */
+  background-color: #163958;
+  position: relative;
+}
+.menu-hamburger {
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* posisi awal sidebar tersembunyi */
+  width: 250px;
+  height: 100%;
+  background: #163c65;
+  color: #fff;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: rem;
+  z-index: 999 ;
+}
+
+#toggle-sidebar:checked ~ .sidebar {
+  left: 0; /* tampilkan sidebar */
+}
+
+.close-btn {
+  position: absolute;
+  display:flex ;
+  top: 2px;
+  left: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  align-items:flex-end;
+ flex-direction: column;
+  background: #f8d75d;
+  height: 150px;
+  width: 240px ;
+  top: 1px;
+  padding:5px ;
+  text-align: center;
+  color: #163c65;
+  
+}
+
+.logo button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #163c65;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+  color: #f8d75d;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li a:hover{
+  text-decoration: underline;
+}
+.navbar {
+  /* ======= Navbar Container ======= */
+  background-color: #3080c6;   /* Biru gelap */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  margin:auto;
+}
+
+/* ======= Menu Burger ======= */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background-color: #163958;
+  justify-content: flex-end;
+}
+
+.menu-icon span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+/* ======= Search Bar ======= */
+.search-bar {
+  display: flex;
+  background-color: #f8d75d;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;                /* Search bar lebar fleksibel */
+  margin: 0 20px;         /* Jarak kiri kanan */
+  max-width: auto;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: auto;
+  flex: 1;
+  justify-content: flex-end;                /* Input isi ruang */
+}
+
+.search-bar .search-btn {
+  background: none;
+  border: none;
+  padding: 0 20px;
+  font-size: 20px;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+/* ======= Ikon Notifikasi & Profil ======= */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  flex-wrap: wrap;
+  object-fit: cover ;
+  border-radius : 50%;
+}
+
+.cihuy{
+  color: #163958;
+}
+
+
+
+
+.ireng {
+  display:flex;
+  justify-content: flex-end;
+  background: #002f5f;
+  color: #ffffff;
+  padding: 1em;
+}
+
+.ireng div {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.cihuy {
+  font-weight:bold;
+}
+
+
+
+
+
+
+/* Login Card */
+.login-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.login-card {
+  background: #fbd75c;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-card h1 {
+  color: #173f68;
+}
+
+.login-card p {
+  color: #173f68;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-card input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  outline: none;
+  box-sizing: border-box;
+}
+
+.password-field {
+  position: relative;
+  
+}
+
+.password-field .show-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.login-btn {
+  padding: 10px;
+  border: none;
+  background: #173f68;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.forgot,
+.register-link {
+  display: block;
+  margin-top: 10px;
+  color: #173f68;
+  text-decoration: none;
+}

@@ -1,0 +1,437 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin:0 ;
+  background: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.bruh{
+  display: flex;          /* Aktifkan flexbox */
+  align-items: center;    /* Sejajarkan vertikal */
+  justify-content: space-between;  /* Ruang antar elemen */
+  background: #183d6f;    /* Contoh warna nav */
+  padding:5px ;
+  background-color: #163958;
+}
+.menu-hamburger {
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: #f9d65c;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* posisi awal sidebar tersembunyi */
+  width: 250px;
+  height: 100%;
+  background: #163c65;
+  color: #fff;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: rem;
+  z-index: 999px ;
+}
+
+#toggle-sidebar:checked ~ .sidebar {
+  left: 0; /* tampilkan sidebar */
+}
+
+.close-btn {
+  position: absolute;
+  display:flex ;
+  top: 2px;
+  left: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  align-items:flex-end;
+ 
+  background: #f8d75d;
+  height: 150px;
+  width: 250px ;
+  top: 1px;
+  padding:5px ;
+  text-align: center;
+  color: #163c65;
+}
+
+.logo a {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #163c65;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+  color: #f8d75d;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li a:hover{
+  text-decoration: underline;
+}
+.navbar {
+  /* ======= Navbar Container ======= */
+  background-color: #3080c6;   /* Biru gelap */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  margin:auto;
+}
+
+/* ======= Menu Burger ======= */
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background-color: #163958;
+  justify-content: flex-end;
+}
+
+.menu-icon span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* ======= Search Bar ======= */
+.search-bar {
+  display: flex;
+  background-color: #f8d75d;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;                /* Search bar lebar fleksibel */
+  margin: 0 20px;         /* Jarak kiri kanan */
+  max-width: auto;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: auto;
+  flex: 1;
+  justify-content: flex-end;                /* Input isi ruang */
+}
+
+.search-bar .search-btn {
+  background: none;
+  border: none;
+  padding: 0 20px;
+  font-size: 20px;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+/* ======= Ikon Notifikasi & Profil ======= */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  flex-wrap: wrap;
+  object-fit: cover ;
+  border-radius : 50%;
+}
+
+.cihuy{
+  color: #163958;
+}
+
+
+
+
+.ireng {
+  display:flex;
+  justify-content: flex-end;
+  background: #002f5f;
+  color: #ffffff;
+  padding: 1em;
+}
+
+.ireng div {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+
+.cihuy {
+  font-weight:bold;
+}
+.hero {
+  display: flex;
+  color: #002f5f;
+  justify-content: space-evenly;
+  background: #ffdb58;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 5px;
+  border-color: #163958;
+  border-width: 20px;
+  border:5px solid #163c65;
+  font-weight: bold;
+ 
+}
+
+  .hero h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+    .hero p {
+      font-size: 18px;
+      margin: 10px 0 30px;
+    }
+
+.wle {
+  font-size: 20px;
+}
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.btn {
+  background: #163958;
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 #555;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fitur {
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 60px;
+}
+
+.blue-box {
+  background-color: #163958; /* biru gelap */
+  padding: 30px 40px;          /* jarak dalam kotak */
+  border-radius: 20px;       /* sudut membulat */
+  display: flex;             /* supaya isi sejajar horizontal */
+  justify-content: center;   /* posisi isi di tengah horizontal */
+  gap: 10px;                 /* jarak antar tombol di dalamnya */
+  max-width: 785px;          /* opsional: batasi lebar kotak */
+  margin:auto;    
+  align-items: center; 
+  text-align: center;    /* posisi kotak ke tengah halaman */
+}
+
+  .fitur h1 {
+    background: #163958;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+  }
+
+    .fitur-grid {
+      display: flex;
+      gap: 20px;
+      border-radius: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+
+      
+    }
+    .fitur-ai {
+        background: #ffdb58;
+        border-radius: 10px;
+        border: 2px solid #002f5f;
+        margin: 10px;
+        padding: 40px;
+        width: 200px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        box-shadow: 4px 4px 0px #070000;
+        cursor: pointer;
+      }
+.card-button {
+position: center;
+width: 200px;
+height: 200px;
+background: #f9d65c; /* kuning */
+border: 3px solid #163958; /* garis biru */
+border-radius: 20px;
+box-shadow: 8px 8px 0 #555; /* bayangan */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+overflow: auto;
+gap: 20px;
+}
+
+  .card-button .corner-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+    .card-button .main-logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+      color: #163958;
+      
+    }
+
+      .card-button span {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #163958;
+      }
+           
+.fitur-card {
+  background:#163958;
+  border-radius: 10px;
+  border: 2px solid #002f5f;
+ color: #ffffff;
+  margin: 13px;
+  padding: 20px 50px;
+  width: 200px;
+  height: 200px;
+  font-weight: bold;
+  flex-direction: column; 
+  align-items: center;
+  box-shadow: 4px 4px 0px #999;
+  cursor: pointer;
+}
+
+.fitur-card img {
+  width: 60px; /* Ukuran ikon */
+  height: auto;
+  align-items: center;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.fitur-card span {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        color: #ffffff;
+      }
+
+.fitur-damn {
+  background:#163958;
+  border-radius: 10px;
+  border: 2px solid #002f5f;
+ color: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  width: 180px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 4px 4px 0px #999;
+  cursor: pointer;
+}
+
+.breaking-news {
+  background-color: #163958; /* Biru tua */
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+  max-height:30 px; /* Biar rapih */
+ 
+  
+}
+
+.breaking-title {
+  background-color: #f9d65c; /* Kuning */
+  display:block;
+  padding: 5px 15px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.breaking-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 10px;
+}
+
+.breaking-content img {
+  max-width: 120px;
+  border-radius: 5px;
+}
+
+.breaking-content p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.footer {
+  background: #002f5f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.last {
+  cursor: pointer ;
+  color: #ffffff;
+}
