@@ -1,145 +1,181 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siap.in</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siap.in</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <script>
+      document
+        .getElementById("btnLogin")
+        .addEventListener("click", function () {
+          window.location.href = "Login/login.html";
+        });
+    </script>
 
-<body>
-<script>
-    document.getElementById("btnLogin").addEventListener("click", function() {
-      window.location.href = "Login/login.html";
-    });
-  </script>
+    <header class="bruh">
+      <!-- Trigger Sidebar -->
+      <input type="checkbox" id="toggle-sidebar" hidden />
+      <label for="toggle-sidebar" class="menu-hamburger">☰</label>
 
+      <!-- Search bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="Cari Apa Yang Kamu Mau" />
+        <button class="search-btn">🔍</button>
+      </div>
 
-<header class="bruh">
-  <!-- Trigger Sidebar -->
-  <input type="checkbox" id="toggle-sidebar" hidden>
-  <label for="toggle-sidebar" class="menu-hamburger">☰</label>
+      <!-- Icons -->
+      <div class="icons">
+        <img
+          src="https://i.pinimg.com/1200x/db/53/f4/db53f45df0246d78d4bc64c7bb750036.jpg"
+          alt="Notifikasi"
+        />
+        <img
+          src="https://i.pinimg.com/736x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg"
+          alt="Profil"
+        />
+      </div>
 
-  <!-- Search bar -->
-  <div class="search-bar">
-    <input type="text" placeholder="Cari Apa Yang Kamu Mau">
-    <button class="search-btn">🔍</button>
-  </div>
-
-  <!-- Icons -->
-  <div class="icons">
-    <img src="https://i.pinimg.com/1200x/db/53/f4/db53f45df0246d78d4bc64c7bb750036.jpg" alt="Notifikasi">
-    <img src="https://i.pinimg.com/736x/57/00/c0/5700c04197ee9a4372a35ef16eb78f4e.jpg" alt="Profil">
-  </div>
-
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    
-    <div class="logo">
-      <label for="toggle-sidebar" class="close-btn">✕</label>
-      <h2>Siap.in</h2>
-      <p>Siapin studi lanjutmu dari sekarang yuk!</p>
-      <a href="Login/login.html">Daftar</a>
-      <a href="Login/login.html">Masuk</a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">🏠 Beranda</a></li>
-        <li><a href="#">📝 Jalur Pendaftaran</a></li>
-        <li><a href="#">🎓 Perguruan Tinggi</a></li>
-        <li><a href="#">🎓 Informasi Jurusan</a></li>
-        <li><a href="#">📰 News</a></li>
-        <li><a href="#">🏆 Informasi Alumni</a></li>
-        <li><a href="#">⚙️ Pengaturan</a></li>
-      </ul>
-    </nav>
-  </aside>
-</header>
-</header>
-
-
-
-
-  
-  <!-- Header -->
-  <header class="hero">
-    <div class="Ayo">
-    <h1 class="cihuy">Siap.in</h1>
-    <h2 class="wle">Siapin studi lanjutmu dari sekarang yuk!</h2>
-    </div>
-
-    <div class="gas">
-      <a href="Login/login.html" class="btn">Daftar</a>
-      <a href="Login/login.html" class="btn">Masuk</a>
-    </div>
-  </header>
-
-  <!-- Fitur Utama -->
-  <section class="fitur">
-    <h1>Ayo Coba Fitur AI.in !</h1>
-
-     <section class="blue-box">
-       <div class="fitur-grid">
-      
-        <button class="card-button"> 
-        <img src="https://cdn-icons-png.flaticon.com/512/826/826118.png" alt="AI Icon" class="corner-icon">
-        <img src="https://pmb.uin-malang.ac.id/wp-content/uploads/2024/01/SNBP.jpg" alt="SNBP Logo" class="main-logo">
-        <span>AI SNBP</span>
-        </button>
-
-     
-        <button class="card-button"> 
-        <img src="https://cdn-icons-png.flaticon.com/512/826/826118.png" alt="AI Icon" class="corner-icon">
-        <img src="https://pmb.uin-malang.ac.id/wp-content/uploads/2024/01/SNBP.jpg" alt="SNBP Logo" class="main-logo">
-        <span>AI SNBT</span>
-        </button>
-      
-        <button class="card-button"> 
-        <img src="https://cdn-icons-png.flaticon.com/512/826/826118.png" alt="AI Icon" class="corner-icon">
-        <img src="https://pmb.uin-malang.ac.id/wp-content/uploads/2024/01/SNBP.jpg" alt="SNBP Logo" class="main-logo">
-        <span>CV.in</span>
-        </button>
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">
+          <label for="toggle-sidebar" class="close-btn">✕</label>
+          <h2>Siap.in</h2>
+          <p>Siapin studi lanjutmu dari sekarang yuk!</p>
+          <a href="Login/login.html">Daftar</a>
+          <a href="Login/login.html">Masuk</a>
         </div>
-        </section>
+        <nav>
+          <ul>
+            <li><a href="index.html">🏠 Beranda</a></li>
+            <li><a href="#">📝 Jalur Pendaftaran</a></li>
+            <li><a href="#">🎓 Perguruan Tinggi</a></li>
+            <li><a href="#">🎓 Informasi Jurusan</a></li>
+            <li><a href="#">📰 News</a></li>
+            <li><a href="#">🏆 Informasi Alumni</a></li>
+            <li><a href="#">⚙️ Pengaturan</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </header>
 
-    <div class="fitur-grid">
+    <!-- Header -->
+    <header class="hero">
+      <div class="Ayo">
+        <h1 class="cihuy">Siap.in</h1>
+        <h2 class="wle">Siapin studi lanjutmu dari sekarang yuk!</h2>
+      </div>
 
-      <button class="fitur-card">
-      <img src="https://i.pinimg.com/736x/fc/d9/14/fcd9147bfd917dc87f09bdc4e53cd8ee.jpg" alt="Jalur Pendaftaran">
-      <span>Jalur Pendaftaran</span>
-      </button>
+      <div class="gas">
+        <a href="Login/login.html" class="btn">Daftar</a>
+        <a href="Login/login.html" class="btn">Masuk</a>
+      </div>
+    </header>
 
-      <button class="fitur-card">
-      <img src="https://i.pinimg.com/736x/fc/d9/14/fcd9147bfd917dc87f09bdc4e53cd8ee.jpg" alt="Perguruan Tinggi">
-      <span>Perguruan Tinggi</span>
-      </button>
+    <!-- Fitur Utama -->
+    <section class="fitur">
+      <h1>Ayo Coba Fitur AI.in !</h1>
 
-      <button class="fitur-card">
-      <img src="https://i.pinimg.com/736x/fc/d9/14/fcd9147bfd917dc87f09bdc4e53cd8ee.jpg" alt="Informasi Jurusan">
-      <span>Informasi Jurusan</span>
-      </button>
+      <section class="blue-box">
+        <div class="fitur-grid">
+          <button class="card-button">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/826/826118.png"
+              alt="AI Icon"
+              class="corner-icon"
+            />
+            <img
+              src="https://pengumuman-snbp.snpmb.id/img/snbp.png"
+              alt="SNBP Logo"
+              class="main-logo"
+            />
+            <span>AI SNBP</span>
+          </button>
 
+          <button class="card-button">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/826/826118.png"
+              alt="AI Icon"
+              class="corner-icon"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_Seleksi_Nasional_Berdasarkan_Tes_%28SNBT%29.svg/2048px-Logo_Seleksi_Nasional_Berdasarkan_Tes_%28SNBT%29.svg.png"
+              alt="SNBT Logo"
+              class="main-logo"
+            />
+            <span>AI SNBT</span>
+          </button>
+
+          <button class="card-button">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/826/826118.png"
+              alt="AI Icon"
+              class="corner-icon"
+            />
+            <img
+              src="https://images.vexels.com/media/users/3/140030/isolated/svg/521136d25b37386f49728b93d2e4e6fa.svg"
+              alt="CV.in Logo"
+              class="main-logo"
+            />
+            <span>CV.in</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="fitur-grid">
+        <button class="fitur-card">
+          <img
+            src="https://i.pinimg.com/736x/fc/d9/14/fcd9147bfd917dc87f09bdc4e53cd8ee.jpg"
+            alt="Jalur Pendaftaran"
+          />
+          <span>Jalur Pendaftaran</span>
+        </button>
+
+        <button class="fitur-card">
+          <img
+            src="https://i.pinimg.com/736x/fc/d9/14/fcd9147bfd917dc87f09bdc4e53cd8ee.jpg"
+            alt="Perguruan Tinggi"
+          />
+          <span>Perguruan Tinggi</span>
+        </button>
+
+        <button class="fitur-card">
+          <img
+            src="https://i.pinimg.com/736x/fc/d9/14/fcd9147bfd917dc87f09bdc4e53cd8ee.jpg"
+            alt="Informasi Jurusan"
+          />
+          <span>Informasi Jurusan</span>
+        </button>
+      </div>
+
+      <div class="fitur-grid">
+        <div class="fitur-damn">News</div>
+        <div class="fitur-damn">Informasi Alumni</div>
+      </div>
+    </section>
+
+    <!-- Breaking News -->
+    <div class="breaking-news">
+      <div class="breaking-title">Breaking News</div>
+      <div class="breaking-content">
+        <img
+          src="https://pmb.uin-malang.ac.id/wp-content/uploads/2024/01/SNBP.jpg"
+          alt="SNBP Logo"
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat...
+        </p>
+      </div>
     </div>
 
-    <div class="fitur-grid">
-      <div class="fitur-damn">News</div>
-      <div class="fitur-damn">Informasi Alumni</div>
-      
-    </div>
-  </section>
-
-  <!-- Breaking News -->
-  <div class="breaking-news">
-    <div class="breaking-title">Breaking News</div>
-    <div class="breaking-content">
-    <img src="https://pmb.uin-malang.ac.id/wp-content/uploads/2024/01/SNBP.jpg" alt="SNBP Logo">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p class="last">About Us | Follow Us | Company</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="last">About Us | Follow Us | Company</p>
+    </footer>
+  </body>
 </html>
