@@ -274,7 +274,7 @@ body {
   gap: 20px;
   border-radius: 15px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 20px 0;
 }
 .fitur-ai {
