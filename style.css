@@ -424,3 +424,50 @@ body {
   cursor: pointer;
   color: #ffffff;
 }
+
+
+@media screen and (max-width: 600px) {
+  .card-button .corner-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .card-button {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #f9d65c; /* kuning */
+    border: 3px solid #163958; /* garis biru */
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 #555; /* bayangan */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: auto;
+    gap: 0px;
+  }
+  .card-button .main-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0px;
+    color: #163958;
+  }
+
+  .fitur {
+    padding: 0px 0px;
+  }
+  .blue-box {
+    background-color: #163958; /* biru gelap */
+    padding: 30px 40px; /* jarak dalam kotak */
+    border-radius: 20px; /* sudut membulat */
+    display: flex; /* supaya isi sejajar horizontal */
+    justify-content: center; /* posisi isi di tengah horizontal */
+    gap: 10px; /* jarak antar tombol di dalamnya */
+    max-width: 785px; /* opsional: batasi lebar kotak */
+    /* min-width: 600px; opsional: batasi lebar kotak */
+    margin: auto;
+    align-items: center;
+    text-align: center; /* posisi kotak ke tengah halaman */
+  }
+}
