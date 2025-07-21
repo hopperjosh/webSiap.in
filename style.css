@@ -293,7 +293,7 @@ body {
   cursor: pointer;
 }
 .card-button {
-  position: center;
+  position: relative;
   width: 200px;
   height: 200px;
   background: #f9d65c; /* kuning */
@@ -311,8 +311,9 @@ body {
 
 .card-button .corner-icon {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  left: 8px;
+  transform: none;
   width: 40px;
   height: 40px;
 }
@@ -422,62 +423,4 @@ body {
 .last {
   cursor: pointer;
   color: #ffffff;
-}
-/* ...existing code... */
-@media (max-width: 600px) {
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span,
-  label,
-  .btn,
-  .card-button,
-  .fitur-ai,
-  .fitur-card,
-  .fitur-damn,
-  button,
-  input,
-  .search-bar,
-  .logo,
-  .logo a,
-  .sidebar,
-  .navbar,
-  .icons img,
-  .hero,
-  .footer {
-    font-size: 12px !important;
-    padding: 4px !important;
-    margin: 2px !important;
-    width: auto !important;
-    height: auto !important;
-    box-sizing: border-box;
-  }
-  .icons img {
-    width: 24px !important;
-    height: 24px !important;
-  }
-  .logo {
-    height: 60px !important;
-    width: 100px !important;
-  }
-  .card-button,
-  .fitur-card,
-  .fitur-ai,
-  .fitur-damn {
-    width: 80px !important;
-    height: 30px !important;
-    padding: 4px !important;
-  }
-  .search-bar input {
-    font-size: 12px !important;
-    padding: 4px !important;
-  }
-  .hero h1 {
-    font-size: 16px !important;
-  }
 }
