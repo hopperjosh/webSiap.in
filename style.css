@@ -17,7 +17,7 @@ body {
 .bruh {
   position: fixed ;
   top: 0px ;
-  height: 60px ;
+  height: 50px ;
   width: 100% ;
   display: flex; /* Aktifkan flexbox */
   align-items: center; /* Sejajarkan vertikal */
@@ -199,7 +199,7 @@ body {
 }
 .hero {
   display: flex;
-  margin-top: 60px ;
+  margin-top: 30px ;
   color: #002f5f;
   justify-content: space-evenly;
   background: #ffdb58;
