@@ -23,6 +23,7 @@ body {
   background: #183d6f; /* Contoh warna nav */
   padding: 5px;
   background-color: #163958;
+  z-index: 998;
 }
 .menu-hamburger {
   font-size: 2rem;
