@@ -17,7 +17,7 @@ body {
 .bruh {
   position: fixed ;
   top: 0px ;
-  height: 50px ;
+  height: 70px ;
   width: 100% ;
   display: flex; /* Aktifkan flexbox */
   align-items: center; /* Sejajarkan vertikal */
@@ -88,7 +88,15 @@ body {
   margin-top: 60px;
 }
 .align-logo-sidebar {
-  margin-top: 20px;
+  margin-top: 30px;
+}
+.align-sidebar {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.spasi-sidebar {
+  gap: 10px;
 }
 .icon-sidebar {
   margin : 2px;
@@ -121,6 +129,8 @@ body {
   justify-content:flex-end;
   align-content:flex-end;
   margin-top:  100%;
+  gap: 9px;
+
 }
 .navbar {
   /* ======= Navbar Container ======= */
@@ -158,6 +168,7 @@ body {
   overflow: hidden;
   flex: 1; /* Search bar lebar fleksibel */
   margin: 0 20px; /* Jarak kiri kanan */
+  height: 30px;
   max-width: auto;
 }
 
@@ -165,17 +176,20 @@ body {
   border: none;
   outline: none;
   padding: auto;
+  
   flex: 1;
   justify-content: flex-end; /* Input isi ruang */
 }
 
-.search-bar .search-btn {
-  background: none;
-  border: none;
+.search-bar .search-btn  {
   padding: 0 20px;
+  justify-content:center ;
+  height: 30px;
+  width: 90px;
   font-size: 20px;
   cursor: pointer;
-  justify-content: flex-end;
+  align-items: center;
+  color:#002f5f
 }
 
 /* ======= Ikon Notifikasi & Profil ======= */
@@ -184,14 +198,17 @@ body {
   align-items: center;
   gap: 15px;
   cursor: pointer;
+  margin-right: 20px;
+  
 }
 
-.icons img {
-  width: 40px;
-  height: 40px;
+.icons svg {
+  width: 35px;
+  height: 35px ;
   flex-wrap: wrap;
   object-fit: cover;
   border-radius: 50%;
+  color: #f8d75d;
 }
 
 .cihuy {
