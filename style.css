@@ -296,10 +296,12 @@ body {
 .fitur-gris {
   display: flex;
   gap: 5px;
+  align-items: center;
   border-radius: 15px;
   justify-content: center;
   flex-wrap: nowrap;
   margin: 20px 0;
+
 }
 .fitur-grid {
   display: flex;
