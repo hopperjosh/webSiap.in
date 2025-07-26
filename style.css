@@ -65,7 +65,6 @@ body {
 
 .logo {
   align-items: flex-end;
-
   background: #f8d75d;
   height: 150px;
   width: 250px;
@@ -211,30 +210,23 @@ body {
   color: #f8d75d;
 }
 
-.cihuy {
+.Ayo {
   color: #163958;
 }
-
-.ireng {
-  display: flex;
-  justify-content: flex-end;
-  background: #002f5f;
-  color: #ffffff;
-  padding: 1em;
-}
-
-.ireng div {
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.cihuy {
+.Ayo h1 {
   font-weight: bold;
 }
+.Ayo h2 {
+    font-size: 20px;
+}
+
+
+
+
+
 .hero {
   display: flex;
   margin-top: 50px ;
-  color: #002f5f;
   justify-content: space-evenly;
   background: #ffdb58;
   text-align: center;
@@ -256,9 +248,7 @@ body {
   margin: 10px 0 30px;
 }
 
-.wle {
-  font-size: 20px;
-}
+
 .hero-buttons {
   display: flex;
   flex-direction: column;
