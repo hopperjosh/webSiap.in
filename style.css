@@ -17,7 +17,7 @@ body {
 .bruh {
   position: fixed ;
   top: 0px ;
-  height: 50px ;
+  height: 70px ;
   width: 100% ;
   display: flex; /* Aktifkan flexbox */
   align-items: center; /* Sejajarkan vertikal */
@@ -55,6 +55,7 @@ body {
 
 .close-btn {
   position: absolute;
+  color: #163958;
   display: flex;
   top: 2px;
   left: 10px;
@@ -64,14 +65,15 @@ body {
 
 .logo {
   align-items: flex-end;
-
   background: #f8d75d;
   height: 150px;
   width: 250px;
   top: 1px;
   padding: 5px;
+  justify-content:flex-end;
   text-align: center;
   color: #163c65;
+  margin-top: 0px;
 }
 
 .logo a {
@@ -82,13 +84,28 @@ body {
   color: #ffffff;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 60px;
+}
+.align-logo-sidebar {
+  margin-top: 30px;
+}
+.align-sidebar {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.spasi-sidebar {
+  gap: 10px;
+}
+.icon-sidebar {
+  margin : 2px;
 }
 
 .sidebar nav ul {
   list-style: none;
   padding: 0;
   margin: 1rem 0;
+  margin-left: 10px;
 }
 
 .sidebar nav ul li {
@@ -101,10 +118,18 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
+  margin-right:5px;
 }
 
 .sidebar nav ul li a:hover {
   text-decoration: underline;
+}
+.setting {
+  justify-content:flex-end;
+  align-content:flex-end;
+  margin-top:  100%;
+  gap: 9px;
+
 }
 .navbar {
   /* ======= Navbar Container ======= */
@@ -142,6 +167,7 @@ body {
   overflow: hidden;
   flex: 1; /* Search bar lebar fleksibel */
   margin: 0 20px; /* Jarak kiri kanan */
+  height: 30px;
   max-width: auto;
 }
 
@@ -149,17 +175,20 @@ body {
   border: none;
   outline: none;
   padding: auto;
+  
   flex: 1;
   justify-content: flex-end; /* Input isi ruang */
 }
 
-.search-bar .search-btn {
-  background: none;
-  border: none;
+.search-bar .search-btn  {
   padding: 0 20px;
+  justify-content:center ;
+  height: 30px;
+  width: 90px;
   font-size: 20px;
   cursor: pointer;
-  justify-content: flex-end;
+  align-items: center;
+  color:#002f5f
 }
 
 /* ======= Ikon Notifikasi & Profil ======= */
@@ -167,40 +196,37 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  
 }
 
-.icons img {
-  width: 40px;
-  height: 40px;
+.icons svg {
+  width: 35px;
+  height: 35px ;
   flex-wrap: wrap;
   object-fit: cover;
   border-radius: 50%;
+  color: #f8d75d;
 }
 
-.cihuy {
+.Ayo {
   color: #163958;
 }
-
-.ireng {
-  display: flex;
-  justify-content: flex-end;
-  background: #002f5f;
-  color: #ffffff;
-  padding: 1em;
-}
-
-.ireng div {
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.cihuy {
+.Ayo h1 {
   font-weight: bold;
 }
+.Ayo h2 {
+    font-size: 20px;
+}
+
+
+
+
+
 .hero {
   display: flex;
-  margin-top: 30px ;
-  color: #002f5f;
+  margin-top: 50px ;
   justify-content: space-evenly;
   background: #ffdb58;
   text-align: center;
@@ -222,9 +248,7 @@ body {
   margin: 10px 0 30px;
 }
 
-.wle {
-  font-size: 20px;
-}
+
 .hero-buttons {
   display: flex;
   flex-direction: column;
@@ -252,6 +276,7 @@ body {
   text-align: center;
   border-radius: 10px;
   padding: 20px 60px;
+  margin: 2px;
 }
 
 .blue-box {
@@ -275,13 +300,23 @@ body {
   display: inline-block;
 }
 
-.fitur-grid {
+.fitur-gris {
   display: flex;
-  gap: 20px;
+  gap: 5px;
+  align-items: center;
   border-radius: 15px;
   justify-content: center;
   flex-wrap: nowrap;
   margin: 20px 0;
+
+}
+.fitur-grid {
+  display: flex;
+  gap: 0px;
+  border-radius: 15px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 10px 0;
 }
 .fitur-ai {
   background: #ffdb58;
@@ -437,6 +472,12 @@ body {
     width: 30px;
     height: 30px;
   }
+  .fitur {
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 60px;
+  margin-top: 20px;
+}
   .card-button {
     position: relative;
     width: 150px;
@@ -472,8 +513,48 @@ body {
     gap: 10px; /* jarak antar tombol di dalamnya */
     max-width: 785px; /* opsional: batasi lebar kotak */
     /* min-width: 600px; opsional: batasi lebar kotak */
-    margin: auto;
+    margin: 5px;
     align-items: center;
     text-align: center; /* posisi kotak ke tengah halaman */
   }
+  .fitur-grid {
+  display: flex;
+  gap: 0px;
+  border-radius: 15px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+  }
+
+  .fitur-card {
+  background: #163958;
+  border-radius:20px;
+  border: 2px solid #002f5f;
+  color: #ffffff;
+  margin: 12px;
+  padding: 20px 20px;
+  width: 150px;
+  height: 150px;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 0px #999;
+  cursor: pointer;
+}
+
+.fitur-card img {
+  width: 50px; /* Ukuran ikon */
+  height: auto;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.fitur-card span {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  padding: 20px;
+}
 }
