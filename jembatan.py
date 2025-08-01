@@ -1,1 +1,3 @@
-a = input("Masukkan angka: ")
+p = 3
+q = 2
+print (p+q)
