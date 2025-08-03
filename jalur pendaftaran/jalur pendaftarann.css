@@ -174,8 +174,7 @@ body {
 .search-bar input {
   border: none;
   outline: none;
-  padding: auto;
-  
+  padding: 0 10px;
   flex: 1;
   justify-content: flex-end; /* Input isi ruang */
 }
@@ -183,7 +182,7 @@ body {
 .search-bar .search-btn  {
   padding: 0 20px;
   justify-content:center ;
-  height: 30px;
+  height: 25px;
   width: 90px;
   font-size: 20px;
   cursor: pointer;
