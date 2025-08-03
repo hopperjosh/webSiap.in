@@ -1,35 +1,11 @@
-import os
-import requests
+from diffusers import StableDiffusionPipeline
+import torch
 
-API_URL = "https://router.huggingface.co/hf-inference/models/black-forest-labs/FLUX.1-dev"
-headers = {
-    "Authorization": f"Bearer {os.environ['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']}",
-}
+model_id = "sd-legacy/stable-diffusion-v1-5"
+pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16)
+pipe = pipe.to("cuda")
 
-def query(payload):
-    response = requests.post(API_URL, headers=headers, json=payload)
-    return response.content
-
-image_bytes = query({
-    "inputs": "Astronaut riding a horse",
-})
-
-# You can access the image with PIL.Image for example
-import io
-from PIL import Image
-image = Image.open(io.BytesIO(image_bytes))
-
-
-from huggingface_hub import InferenceClient
-
-client = InferenceClient(
-    provider="hf-inference",
-    api_key=os.environ["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"],
-)
-
-# output is a PIL.Image object
-image = client.text_to_image(
-    "Astronaut riding a horse",
-    model="black-forest-labs/FLUX.1-dev",
-)
-
+prompt = "a photo of an astronaut riding a horse on mars"
+image = pipe(prompt).images[0]  
+    
+image.save("astronaut_rides_horse.png")
