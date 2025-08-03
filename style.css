@@ -87,7 +87,7 @@ body {
   margin-top: 60px;
 }
 .align-logo-sidebar {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .align-sidebar {
   display: flex;
@@ -183,8 +183,8 @@ body {
 .search-bar .search-btn  {
   padding: 0 20px;
   justify-content:center ;
-  height: 30px;
-  width: 90px;
+  height: 25px;
+  width: 70px;
   font-size: 20px;
   cursor: pointer;
   align-items: center;
