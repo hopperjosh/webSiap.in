@@ -12,7 +12,7 @@ from transformers import pipeline           # Pipeline Hugging Face untuk tugas 
 
 print ("program sedang berjalan")
 # ====== Menentukan model ======
-model_id = "DeepSeek-R1-0528"  # ~1.3B parameter, ringan untuk CPU
+model_id = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"  # ~1.3B parameter, ringan untuk CPU
 # ID repositori di Hugging Face Hub berisi checkpoint Llama-3.2-3B versi Instruct
 print("p1")
 # ====== Membuat pipeline generasi teks ======
