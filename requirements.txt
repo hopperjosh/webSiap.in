@@ -1,0 +1,13 @@
+# python requirement buat yang mau mengeksekusi python dan LLM di local
+
+# Buat yang mau pake GPU
+pip install transformers accelerate
+
+# Buat yang gaada GPU
+pip install accelerate[torch]
+
+# Install dependencies
+pip install transformers 
+pip install bitsandbytes
+pip install huggingface_hub
+pip install huggingface_hub[hf_xet]
