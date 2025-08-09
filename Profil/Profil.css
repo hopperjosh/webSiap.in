@@ -174,8 +174,7 @@ body {
 .search-bar input {
   border: none;
   outline: none;
-  padding: auto;
-  
+  padding: 0 10px;
   flex: 1;
   justify-content: flex-end; /* Input isi ruang */
 }
@@ -220,14 +219,6 @@ body {
     font-size: 20px;
 }
 
-
-
-
-
-
-* {
-
-}
 
 body {
   font-family: 'Poppins', sans-serif;
