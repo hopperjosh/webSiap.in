@@ -64,7 +64,7 @@ body {
 }
 
 .logo {
-  align-items: flex-end;
+  align-items:flex-end;
   background: #f8d75d;
   height: 150px;
   width: 250px;
@@ -77,14 +77,17 @@ body {
 }
 
 .logo a {
-  margin: 0.5rem;
+ margin: 0.5rem;
   padding: 0.5rem 1rem;
+ width: 20px;
   border: none;
   background: #163c65;
   color: #ffffff;
   cursor: pointer;
   border-radius: 5px;
   margin-top: 60px;
+  
+  ;
 }
 .align-logo-sidebar {
   margin-top: 20px;
