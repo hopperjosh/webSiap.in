@@ -520,7 +520,7 @@ body {
   }
   .fitur-grid {
   display: flex;
-  gap: 0px;
+  gap: 2 px;
   border-radius: 15px;
   justify-content: center;
   flex-wrap: nowrap;
@@ -534,8 +534,8 @@ body {
   color: #ffffff;
   margin: 12px;
   padding: 20px 20px;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   font-weight: bold;
   flex-direction: column;
   align-items: center;
