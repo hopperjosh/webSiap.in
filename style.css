@@ -519,10 +519,9 @@ body {
   }
   .fitur-grid {
   display: flex;
-  gap: 2 px;
+  gap: 0px;
   border-radius: 15px;
   justify-content: center;
-  flex-wrap: nowrap;
   margin: 10px 0;
   }
 
