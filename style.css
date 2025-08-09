@@ -480,9 +480,9 @@ body {
   margin-top: 20px;
 }
   .card-button {
-    position: relative;
-    width: 150px;
-    height: 150px;
+    position:center;
+    width: 120px;
+    height: 120px;
     background: #f9d65c; /* kuning */
     border: 3px solid #163958; /* garis biru */
     border-radius: 20px;
@@ -496,7 +496,7 @@ body {
     gap: 0px;
   }
   .card-button .main-logo {
-    width: 100px;
+    width: 50px;
     height: auto;
     margin-bottom: 0px;
     color: #163958;
