@@ -313,11 +313,10 @@ body {
 }
 .fitur-grid {
   display: flex;
-  gap: 0px;
   border-radius: 15px;
   justify-content: center;
-  flex-wrap: nowrap;
-  margin: 10px 0;
+  gap: none;
+  margin: 30px ;
 }
 .fitur-ai {
   background: #ffdb58;
@@ -325,7 +324,7 @@ body {
   border: 2px solid #002f5f;
   margin: 10px;
   padding: 40px;
-  width: 200px;
+  width: 100px;
   height: 120px;
   display: flex;
   align-items: center;
