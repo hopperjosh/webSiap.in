@@ -16,7 +16,6 @@ body {
 }
 .bruh {
   position: fixed ;
-  top: 0px ;
   height: 70px ;
   width: 100% ;
   display: flex; /* Aktifkan flexbox */
@@ -26,7 +25,7 @@ body {
   padding: 5px;
   background-color: #163958;
   z-index: 998;
-
+ top: 0px;
 }
 .menu-hamburger {
   font-size: 2rem;
