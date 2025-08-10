@@ -198,6 +198,110 @@ body::after {
 }
 /* ========================== ISI ======================== */
 
+.back-section {
+  margin-top: 70px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 22px;
+  gap: 10px;
+  border-bottom: 3px solid #0f3a63;
+}
+.back-section h2 {
+  margin: 0;
+  color: #002f5f;
+}
+
+.back-icon {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.header {
+    padding: 1rem;
+    background: #0A3761;
+    color: white;
+}
+
+.header h1 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+}
+
+.category-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.category-nav button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #B0C4DE;
+    color: #0A3761;
+    font-weight: bold;
+}
+
+.category-nav button.active {
+    background: white;
+    color: #0A3761;
+}
+
+main {
+    padding: 15px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.news-card img {
+    width: 100%;
+    display: block;
+}
+
+.news-info {
+    padding: 15px;
+}
+
+.news-info h2 {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+}
+
+.news-info a {
+    color: #0A3761;
+    text-decoration: none;
+}
+
+.news-info a:hover {
+    text-decoration: underline;
+}
+
+.category {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.category.snbp {
+    background: #0A3761;
+    color: #AFFF5C;
+}
+
+.category.beasiswa {
+    background: #0A3761;
+    color: #FFD700;
+}
+
 
  /* ======= Footer ======= */
 .footer {

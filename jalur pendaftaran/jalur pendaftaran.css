@@ -197,7 +197,71 @@ body::after {
 
 }
 /* ========================== ISI ======================== */
+.back-section {
+  margin-top: 70px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 22px;
+  gap: 10px;
+  border-bottom: 3px solid #0f3a63;
+}
+.back-section h2 {
+  margin: 0;
+  color: #002f5f;
+}
 
+.back-icon {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.jalur-container {
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.jalur-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #173f6b;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jalur-card img {
+  width: 80%;
+  background-color: #f7d96c;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.jalur-card span {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.jalur-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+  .jalur-container {
+    grid-template-columns: 1fr;
+  }
+}
 /* ======= Footer ======= */
 .footer {
   position: absolute;
