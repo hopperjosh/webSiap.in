@@ -329,7 +329,7 @@ body::after {
 .card-button .main-logo {
   width: 100px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   color: #163958;
 }
 
@@ -472,15 +472,18 @@ body::after {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    overflow: auto;
-    gap: 0px;
   }
   .card-button .main-logo {
     width: 50px;
     height: auto;
-    margin-bottom: 0px;
     color: #163958;
   }
+  .card-button span {
+  font-family: Arial, sans-serif;
+ 
+  font-size: 16px;
+  color: #163958;
+}
 
   .fitur {
     padding: 0px 0px;
@@ -533,11 +536,8 @@ body::after {
 
 .fitur-card span {
   font-family: Arial, sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   color: #ffffff;
-  padding: 20px;
+  text-align: center;
 }
 }
-
-/*bang itu fitur kenapa ada 2 jir*/
-
