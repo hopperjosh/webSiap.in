@@ -97,3 +97,82 @@
         </nav>
       </aside>
     </header>
+
+    <!-- Main Content -->
+  <section class="back-section">
+    <span class="back-icon" onclick="window.history.back()">&#8592</span>
+    <h2>Informasi Jurusan</h2>
+  </section>
+
+  <div class="content">
+  <!-- Fakultas Teknik -->
+  <div class="faculty expanded">
+    <button class="faculty-header">
+      <span>Fakultas Teknik</span>
+      <span class="icon">▼</span>
+    </button>
+    <div class="program-list">
+      <div class="program"><span class="diamond">◆</span> Teknik Industri <span class="arrow">▶</span></div>
+      <div class="program"><span class="diamond">◆</span> Teknik Kimia <span class="arrow">▶</span></div>
+      <div class="program"><span class="diamond">◆</span> Teknik Mesin <span class="arrow">▶</span></div>
+      <div class="program"><span class="diamond">◆</span> Teknik Elektro <span class="arrow">▶</span></div>
+      <div class="program"><span class="diamond">◆</span> Teknik Sipil <span class="arrow">▶</span></div>
+    </div>
+  </div>
+
+  <!-- Fakultas Kedokteran -->
+  <div class="faculty">
+    <button class="faculty-header">
+      <span>Fakultas Kedokteran</span>
+      <span class="icon">▶</span>
+    </button>
+    <div class="program-list">
+      <div class="program"><span class="diamond">◆</span> Pendidikan Dokter <span class="arrow">▶</span></div>
+      <div class="program"><span class="diamond">◆</span> Kedokteran Gigi <span class="arrow">▶</span></div>
+    </div>
+  </div>
+
+  <!-- Fakultas MIPA -->
+  <div class="faculty">
+    <button class="faculty-header">
+      <span>Fakultas MIPA</span>
+      <span class="icon">▶</span>
+    </button>
+    <div class="program-list">
+      <div class="program"><span class="diamond">◆</span> Matematika <span class="arrow">▶</span></div>
+      <div class="program"><span class="diamond">◆</span> Fisika <span class="arrow">▶</span></div>
+      <div class="program"><span class="diamond">◆</span> Kimia <span class="arrow">▶</span></div>
+    </div>
+  </div>
+
+  <!-- Fakultas Hukum -->
+  <div class="faculty">
+    <button class="faculty-header">
+      <span>Fakultas Hukum</span>
+      <span class="icon">▶</span>
+    </button>
+    <div class="program-list">
+      <div class="program"><span class="diamond">◆</span> Ilmu Hukum <span class="arrow">▶</span></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.querySelectorAll(".faculty-header").forEach(header => {
+    header.addEventListener("click", () => {
+      const faculty = header.parentElement;
+      faculty.classList.toggle("expanded");
+
+      const icon = header.querySelector(".icon");
+      icon.textContent = faculty.classList.contains("expanded") ? "▼" : "▶";
+    });
+  });
+</script>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="last">About Us | Follow Us | Company</p>
+    </footer>
+  </body>
+</html>

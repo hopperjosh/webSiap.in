@@ -198,6 +198,89 @@ body::after {
 }
 
 /* ========================== ISI ======================== */
+    /* Banner */
+
+
+.banner {
+position: relative;
+margin-top: 70px;
+}
+
+.background_univ {
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 200px;
+position: relative;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+    
+.back-btn {
+position: absolute;
+top: 10px;
+width: 30px;
+height: 30px;
+left: 10px;
+border-radius: 50%;
+padding: 5px;
+cursor: pointer;
+color: #ffffff;
+}
+
+.logo_univ {
+position: absolute;
+bottom: 20px;
+left: 20px;
+width: 50px;
+}
+
+
+
+    /* Konten */
+.content {
+padding: 20px;
+margin-top: -15px;
+}
+    
+.content h1 {
+font-size: 24px;    
+background-color: #103b65;
+color: white;
+padding: 8px;
+border-radius: 5px;
+}
+    
+.content h2 {
+color: #103b65;
+margin-top: 20px;
+font-size: 20px;
+}
+    
+.content p {
+line-height: 1.5;
+}
+
+/* Tombol Fakultas */
+.faculty-btn {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #103b65;
+color: white;
+font-weight: bold;
+padding: 15px 20px;
+border-radius: 50px;
+text-decoration: none;
+font-size: 18px;
+margin-top: 10px;
+}
+
+.faculty-btn span {
+font-size: 20px;      
+color: #fcd34d;
+}
 
 
 /* ======= Footer ======= */
