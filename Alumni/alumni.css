@@ -1,0 +1,281 @@
+body {
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  background: #ffffff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px;
+  /* Set same as footer's height */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================== HEADER ======================== */
+/* ======= Search Bar ======= */
+.search-bar {
+  display: flex;
+  background-color: #f8d75d;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1; /* Search bar lebar fleksibel */
+  margin: 0 20px; /* Jarak kiri kanan */
+  height: 30px;
+  max-width: auto;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  flex: 1;
+  justify-content: flex-end; /* Input isi ruang */
+}
+
+.search-bar .search-btn  {
+  padding: 0 5px;
+  justify-content:left ;
+  height: 25px;
+  width: 60px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  color:#002f5f
+}
+
+/* ======= Ikon Notifikasi & Profil ======= */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+  
+}
+
+.icons svg {
+  width: 35px;
+  height: 35px ;
+  flex-wrap: wrap;
+  object-fit: cover;
+  border-radius: 50%;
+  color: #f8d75d;
+}
+
+/* sidebar*/
+.trigger-sidebar {
+  position: fixed ;
+  height: 70px ;
+  width: 100% ;
+  display: flex; /* Aktifkan flexbox */
+  align-items: center; /* Sejajarkan vertikal */
+  justify-content: space-between; /* Ruang antar elemen */
+  background: #183d6f; /* Contoh warna nav */
+  padding: 5px;
+  background-color: #163958;
+  z-index: 998;
+ top: 0px;
+}
+
+.garis-tiga {
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: #f9d65c;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* posisi awal sidebar tersembunyi */
+  width: 250px;
+  height: 100%;
+  background: #163c65;
+  color: #fff;
+  transition: left 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding: rem;
+  z-index: 999px;
+}
+
+#toggle-sidebar:checked ~ .sidebar {
+  left: 0; /* tampilkan sidebar */
+}
+
+.close-btn {
+  position: absolute;
+  color: #163958;
+  display: flex;
+  top: 2px;
+  left: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  align-items:flex-end;
+  background: #f8d75d;
+  height: 150px;
+  width: 250px;
+  top: 1px;
+  padding: 5px;
+  justify-content:flex-end;
+  text-align: center;
+  color: #163c65;
+  margin-top: 0px;
+}
+
+.logo a {
+ margin: 0.5rem;
+  padding: 0.5rem 1rem;
+ width: 20px;
+  border: none;
+  background: #163c65;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 60px;
+}
+
+.align-logo-sidebar {
+  margin-top: 20px;
+}
+
+.align-sidebar {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.spasi-sidebar {
+  gap: 10px;
+}
+
+.icon-sidebar {
+  margin : 2px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  margin-left: 10px;
+}
+
+.sidebar nav ul li {
+  margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+  color: #f8d75d;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-right:5px;
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.setting {
+  justify-content:flex-end;
+  align-content:flex-end;
+  margin-top:  25%;
+  gap: 9px;
+
+}
+/* ========================== ISI ======================== */
+
+.back-section {
+  margin-top: 70px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 22px;
+  gap: 10px;
+  border-bottom: 3px solid #0f3a63;
+}
+.back-section h2 {
+  margin: 0;
+  color: #002f5f;
+}
+
+.back-icon {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.alumni-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.alumni-card {
+  display: flex;
+  background-color: #103b65;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+}
+
+.alumni-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.alumni-photo {
+  width: 35%;
+  object-fit: cover;
+}
+
+.alumni-info {
+  padding: 15px;
+  flex: 1;
+}
+
+.alumni-info h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.alumni-info p {
+  margin: 3px 0;
+}
+
+.quote {
+  margin-top: 8px;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+ /* ======= Footer ======= */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #002f5f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.last {
+  cursor: pointer;
+  color: #ffffff;
+}
