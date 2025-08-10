@@ -240,6 +240,7 @@ body::after {
 
 .jalur-card img {
   width: 80%;
+  height: 225px;
   background-color: #f7d96c;
   border-radius: 15px;
   padding: 10px;
