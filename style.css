@@ -191,7 +191,7 @@ body::after {
 .setting {
   justify-content:flex-end;
   align-content:flex-end;
-  margin-top:  100%;
+  margin-top:  25%;
   gap: 9px;
 
 }
