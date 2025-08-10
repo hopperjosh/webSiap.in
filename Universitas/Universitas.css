@@ -208,6 +208,10 @@ body::after {
   gap: 10px;
   border-bottom: 3px solid #0f3a63;
 }
+.back-section h2 {
+  margin: 0;
+  color: #002f5f;
+}
 
 .back-icon {
   font-size: 50px;
