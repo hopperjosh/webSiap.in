@@ -227,43 +227,60 @@ body {
 .login-container {
   display: flex;
   justify-content: center;
-  margin-top: 130px;
+  margin-top: 180px;
 }
 
 .login-card {
   background: #fbd75c;
-  padding: 30px;
+  padding: 10px;
   border-radius: 20px;
-  width: 300px;
+  width: 350px;
+  height: 550px;
+border: #002f5f solid 5px;
   text-align: center;
 }
 
 .login-card h1 {
   color: #173f68;
+  margin-top: 20px;
+  font-weight:  500px;
+  font-size: 50px;
+
 }
 
 .login-card p {
   color: #173f68;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .login-card form {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 40px;
 }
 
 .login-card input {
   padding: 10px;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 100%;
   padding: 10px 20px;
-  border-radius: 20px;
 
   outline: none;
   box-sizing: border-box;
 }
+.login-card label{
+  text-align: left;
+  color: #163958;
+}
 
+.input{
+  width: 300px;
+  height: 40px;
+}
 .password-field {
   position: relative;
   
@@ -284,12 +301,19 @@ body {
   color: #fff;
   border-radius: 20px;
   cursor: pointer;
+  margin-top: 15px;
 }
 
-.forgot,
+.forgot{
+margin-top:20px;
+}
+
+.or{
+  margin: 15px;
+}
 .register-link {
   display: block;
   margin-top: 10px;
   color: #173f68;
-  text-decoration: none;
+  
 }
