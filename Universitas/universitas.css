@@ -232,6 +232,7 @@ body::after {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 

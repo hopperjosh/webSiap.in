@@ -262,6 +262,43 @@ font-size: 20px;
 line-height: 1.5;
 }
 
+.faculty {
+  margin-top: 10px;
+}
+
+.faculty-header {
+  background-color: #103b65;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faculty.expanded .faculty-header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* Daftar Prodi */
+.program-list {
+  display: none;
+}
+
+.faculty.expanded .program-list {
+  display: block;
+}
+
 /* Tombol Fakultas */
 .faculty-btn {
 display: flex;
@@ -279,9 +316,39 @@ margin-top: 10px;
 
 .faculty-btn span {
 font-size: 20px;      
-color: #fcd34d;
 }
 
+.program-list {
+  display: none;
+}
+
+.faculty.expanded .program-list {
+  display: block;
+}
+
+.program {
+  background-color: #fcd34d;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: rgb(255, 65, 65);
+}
+
+.program:nth-child(even) {
+  background-color: #eab308;
+}
+
+.diamond {
+  color: #103b65;
+  margin-right: 10px;
+}
+
+.arrow {
+  color: #555;
+  font-size: 16px;
+}
 
 /* ======= Footer ======= */
 .footer {
