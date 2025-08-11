@@ -246,6 +246,15 @@ body::after {
   padding: 10px;
 }
 
+.jalur-card svg {
+  width: 80%;
+  height: 225px;
+  background-color: #f7d96c;
+  border-radius: 15px;
+  padding: 10px;
+  color: #fff;
+}
+
 .jalur-card span {
   color: white;
   font-size: 16px;
