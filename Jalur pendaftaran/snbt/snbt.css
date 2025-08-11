@@ -198,6 +198,99 @@ body::after {
 }
 
 /* ========================== ISI ======================== */
+.banner {
+    margin-top:70px;
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.back-btn {
+position: absolute;
+top: 10px;
+width: 30px;
+height: 30px;
+left: 10px;
+border-radius: 50%;
+padding: 5px;
+cursor: pointer;
+color: #ffffff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+.content {
+    padding: 15px;
+}
+
+.content h2 {
+    font-size: 24px;    
+    background-color: #103b65;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.content h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0A3761;
+    margin-top: 20px;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.content ol {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.predict-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #FFD34E;
+    color: #0A3761;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.predict-btn:hover {
+    background-color: #ffcb2f;
+}
+
+.go-icon {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.powered {
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 8px;
+}
 
 
 

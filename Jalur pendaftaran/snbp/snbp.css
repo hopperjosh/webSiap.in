@@ -197,7 +197,7 @@ body::after {
 
 /* ========================== ISI ======================== */
 .banner {
-    margin-top: 70px;
+    margin-top:70px;
     position: relative;
     height: 180px;
     overflow: hidden;
@@ -235,10 +235,14 @@ color: #ffffff;
 }
 
 .content h2 {
+    font-size: 24px;    
+    background-color: #103b65;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #0A3761;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .content h3 {
@@ -254,7 +258,8 @@ color: #ffffff;
 }
 
 .content ol {
-    margin-top: 10px
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
 .predict-btn {
@@ -284,7 +289,6 @@ color: #ffffff;
     color: gray;
     margin-top: 8px;
 }
-
 
 
 
