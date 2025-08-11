@@ -454,11 +454,11 @@ body::after {
     height: 30px;
   }
   .fitur {
-  text-align: center;
-  border-radius: 10px;
-  padding: 20px 60px;
-  margin-top: 20px;
-}
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px 60px;
+    margin-top: 20px;
+  }
   .card-button {
     position:center;
     width: 120px;
@@ -479,11 +479,11 @@ body::after {
     color: #163958;
   }
   .card-button span {
-  font-family: Arial, sans-serif;
- 
-  font-size: 16px;
-  color: #163958;
-}
+    font-family: Arial, sans-serif;
+  
+    font-size: 16px;
+    color: #163958;
+  }
 
   .fitur {
     padding: 0px 0px;
@@ -502,28 +502,28 @@ body::after {
     text-align: center; /* posisi kotak ke tengah halaman */
   }
   .fitur-grid {
-  display: flex;
-  gap: 0px;
-  border-radius: 15px;
-  justify-content: center;
-  margin: 10px 0;
+    display: flex;
+    gap: 0px;
+    border-radius: 15px;
+    justify-content: center;
+    margin: 10px 0;
   }
 
   .fitur-card {
-  background: #163958;
-  border-radius:20px;
-  border: 2px solid #002f5f;
-  color: #ffffff;
-  margin: 5px;
-  padding: 20px 20px;
-  width: 120px;
-  height: 120px;
-  font-weight: bold;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 4px 4px 0px #999;
-  cursor: pointer;
-}
+    background: #163958;
+    border-radius:20px;
+    border: 2px solid #002f5f;
+    color: #ffffff;
+    margin: 5px;
+    padding: 20px 20px;
+    width: 120px;
+    height: 120px;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 0px #999;
+    cursor: pointer;
+  }
 
 .fitur-card img {
   width: 50px; /* Ukuran ikon */
@@ -534,10 +534,10 @@ body::after {
   margin: auto;
 }
 
-.fitur-card span {
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  color: #ffffff;
-  text-align: center;
-}
+  .fitur-card span {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+  }
 }
