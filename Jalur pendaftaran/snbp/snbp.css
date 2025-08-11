@@ -3,8 +3,6 @@ body {
   font-family: Helvetica, sans-serif;
   margin: 0;
   background: #ffffff;
-  margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 body::after {
@@ -256,8 +254,7 @@ color: #ffffff;
 }
 
 .content ol {
-    margin-top: 10px;
-    padding-left: 20px;
+    margin-top: 10px
 }
 
 .predict-btn {
