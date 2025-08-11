@@ -250,7 +250,7 @@ body::after {
   cursor: pointer;
 }
 
-.faculty.expanded .faculty-header {
+.faculty.expanded .-header {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -264,7 +264,7 @@ body::after {
   display: none;
 }
 
-.faculty.expanded .program-list {
+..expanded .program-list {
   display: block;
 }
 
