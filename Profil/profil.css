@@ -198,6 +198,12 @@ body::after {
 
 
 
+
+
+
+
+
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #F6F9FE;
@@ -375,4 +381,130 @@ body {
 .last {
   cursor: pointer;
   color: #ffffff;
+}
+
+
+@media screen and (max-width: 1170px) and (max-height: 2532px) {
+  
+.card-container {
+ display:flex;
+ margin-top: 70px;
+  background-color: #163c65;
+  border-radius: 20px;
+  color: white;
+  border: #A3C5EB solid 10px;
+ width: 7000px;
+  height: auto;
+  padding: 35px;
+ margin-left:150px ;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.photo-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-frame {
+  position: relative;
+  background-color: white;
+  width: 240px;
+  height: 350px;
+  border-radius: 30px;
+  border: #f8d75d solid 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #e0e6f0;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camera-icon {
+  position: absolute;
+  color: #f8d75d;
+  border-color: #c0ae6d;
+  bottom: 15px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.info-section {
+  flex: 2;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-section h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 1px;
+  text-shadow: 2px 2px 0 #0e2546;
+}
+
+.data-group {
+  font-size: 18px;
+}
+
+.data-item {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  color: #cfdff5;
+  letter-spacing: 1px;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.data-row {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.univ-box {
+  background-color: white;
+  color: #153765;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  height: 200px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  
+}
+
+.univ-logos {
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  gap: 5%;
+}
+
+.univ-logos img {
+  width: 150px;
+  height: 100%;
+}
+
+
 }
