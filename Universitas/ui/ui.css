@@ -256,6 +256,7 @@ border-radius: 5px;
 color: #103b65;
 margin-top: 20px;
 font-size: 20px;
+margin-bottom: 20px;
 }
     
 .content p {
@@ -291,7 +292,7 @@ line-height: 1.5;
   gap: 40px 50px;
 }
 .faculty-btn {
-gap: 50pc;
+margin-bottom: 20px;
 }
 .faculty-header {
   display: flex;
@@ -301,11 +302,12 @@ gap: 50pc;
   color: white;
   font-weight: bold;
   padding: 10px 15px;
-  border-radius: 50px;
+  border-radius: 20px;
   font-size: 18px;
   width: 100%;
   cursor: pointer;
   border: none;
+  margin: 0px;
   
 }
 
