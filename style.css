@@ -204,7 +204,7 @@ body::after {
   background: #ffdb58;
   text-align: center;
   padding: 50px 20px;
-  border-radius: 5px;
+  border-radius: 5px 0px 50px 50px;
   border-color: #163958;
   border: 5px solid #163c65;
   font-weight: bold;
@@ -229,6 +229,7 @@ body::after {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
 }
 
 .btn {
@@ -240,20 +241,21 @@ body::after {
   box-shadow: 4px 4px 0 #555;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
 }
 
 
 /* ======= fitur ======= */
 .fitur {
   text-align: center;
-  border-radius: 10px;
+  border-radius: 70px;
   padding: 20px 60px;
   margin: 2px;
 }
 
 .fitur h1 {
   background: #163958;
-  border-radius: 5px;
+  border-radius: 70px;
   color: #fff;
   padding: 10px;
   display: inline-block;
@@ -262,7 +264,7 @@ body::after {
 .blue-box {
   background-color: #163958; /* biru gelap */
   padding: 30px 40px; /* jarak dalam kotak */
-  border-radius: 20px; /* sudut membulat */
+  border-radius:20px; /* sudut membulat */
   display: flex; /* supaya isi sejajar horizontal */
   justify-content: center; /* posisi isi di tengah horizontal */
   gap: 10px; /* jarak antar tombol di dalamnya */
@@ -491,7 +493,7 @@ body::after {
   .blue-box {
     background-color: #163958; /* biru gelap */
     padding: 30px 40px; /* jarak dalam kotak */
-    border-radius: 20px; /* sudut membulat */
+    border-radius: 60px; /* sudut membulat */
     display: flex; /* supaya isi sejajar horizontal */
     justify-content: center; /* posisi isi di tengah horizontal */
     gap: 10px; /* jarak antar tombol di dalamnya */
