@@ -306,7 +306,7 @@ margin-bottom: 20px;
   color: white;
   font-weight: bold;
   padding: 10px 15px;
-  border-radius: 20px;
+  border-radius: 10px 20px 0px 0px;
   font-size: 18px;
   width: 100%;
   cursor: pointer;
