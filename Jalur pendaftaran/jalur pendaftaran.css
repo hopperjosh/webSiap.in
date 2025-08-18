@@ -231,7 +231,8 @@ body::after {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: #173f6b;
+  background-color: #183b65
+;
   border-radius: 20px;
   padding: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
