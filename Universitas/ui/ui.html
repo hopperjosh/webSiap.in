@@ -120,49 +120,44 @@
     <h2>Fakultas yang dimiliki:</h2>
 
 
-
-
+<div class="pos-faculty">
    <div class="faculty-btn">
-    <button class="faculty-header">
-      <span>Fakultas Kedokteran</span>
-      <span class="icon">▶</span>
-    </button>
-    <div class="program-list">
-      <div class="program"><span class="diamond">◆</span> Matematika <span class="arrow">▶</span></div>
-      <div class="program"><span class="diamond">◆</span> Fisika <span class="arrow">▶</span></div>
-      <div class="program"><span class="diamond">◆</span> Kimia <span class="arrow">▶</span></div>
-    </div>
+  <button class="faculty-header">
+    <span>Fakultas Kedokteran</span>
+    <span class="icon">▶</span>
+  </button>
+  <div class="program-list">
+    <div class="program"><span class="diamond">◆</span> Ilmu Kedokteran <span class="arrow">▶</span></div>
+    <div class="program"><span class="diamond">◆</span> Kedokteran Gigi <span class="arrow">▶</span></div>
+    <div class="program"><span class="diamond">◆</span> Kedokteran Hewan <span class="arrow">▶</span></div>
   </div>
 
-  
-    <div class="faculty-btn">
-    <button class="faculty-header">
-      <span>Fakultas Ilmu Komputer</span>
-      <span class="icon">▶</span>
-    </button>
-    <div class="program-list">
-      <div class="program"><span class="diamond">◆</span> Matematika <span class="arrow">▶</span></div>
-      <div class="program"><span class="diamond">◆</span> Fisika <span class="arrow">▶</span></div>
-      <div class="program"><span class="diamond">◆</span> Kimia <span class="arrow">▶</span></div>
-    </div>
+  <button class="faculty-header">
+    <span>Fakultas Ilmu Komputer</span>
+    <span class="icon">▶</span>
+  </button>
+  <div class="program-list">
+    <div class="program"><span class="diamond">◆</span> Informatika <span class="arrow">▶</span></div>
+    <div class="program"><span class="diamond">◆</span> Ilmu komputer <span class="arrow">▶</span></div>
+    <div class="program"><span class="diamond">◆</span> Sains Data <span class="arrow">▶</span></div>
   </div>
-     <div class="faculty-btn">
-    <button class="faculty-header">
-      <span>Fakultas Teknik</span>
-      <span class="icon">▶</span>
-    </button>
-    <div class="program-list">
-      <div class="program"><span class="diamond">◆</span> Matematika <span class="arrow">▶</span></div>
-      <div class="program"><span class="diamond">◆</span> Fisika <span class="arrow">▶</span></div>
-      <div class="program"><span class="diamond">◆</span> Kimia <span class="arrow">▶</span></div>
-    </div>
+
+  <button class="faculty-header">
+    <span>Fakultas Teknik</span>
+    <span class="icon">▶</span>
+  </button>
+  <div class="program-list">
+    <div class="program"><span class="diamond">◆</span> Teknik Elektro <span class="arrow">▶</span></div>
+    <div class="program"><span class="diamond">◆</span> Teknik Mesin <span class="arrow">▶</span></div>
+    <div class="program"><span class="diamond">◆</span> Teknik Sipil <span class="arrow">▶</span></div>
   </div>
   </div>
+ </div> 
 
 <script>
   document.querySelectorAll(".faculty-header").forEach(header => {
     header.addEventListener("click", () => {
-      const faculty = header.parentElement;
+      const faculty = header.parentElement; // = .faculty-btn
       faculty.classList.toggle("expanded");
 
       const icon = header.querySelector(".icon");

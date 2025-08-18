@@ -265,22 +265,9 @@ line-height: 1.5;
 .faculty {
   margin-top: 10px;
 }
-
-.faculty-header {
-  background-color: #103b65;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+.gatau {
+  gap: 20px;
 }
-
 .faculty.expanded .faculty-header {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -295,36 +282,37 @@ line-height: 1.5;
   display: none;
 }
 
-.faculty.expanded .program-list {
+.faculty-btn.expanded .program-list {
   display: block;
 }
 
 /* Tombol Fakultas */
+.pos-faculty{
+  gap: 40px 50px;
+}
 .faculty-btn {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #103b65;
-color: white;
-font-weight: bold;
-padding: 15px 20px;
-border-radius: 50px;
-text-decoration: none;
-font-size: 18px;
-margin-top: 10px;
+gap: 50pc;
+}
+.faculty-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #103b65;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  
 }
 
-.faculty-btn span {
-font-size: 20px;      
+.faculty-header span {
+  font-size: 20px;      
 }
 
-.program-list {
-  display: none;
-}
-
-.faculty.expanded .program-list {
-  display: block;
-}
 
 .program {
   background-color: #fcd34d;
@@ -333,7 +321,8 @@ font-size: 20px;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  color: rgb(255, 65, 65);
+  border-radius : 5px; 
+  color:#103b65;
 }
 
 .program:nth-child(even) {
@@ -352,15 +341,14 @@ font-size: 20px;
 
 /* ======= Footer ======= */
 .footer {
-  margin-top: 200px;
-  position: absolute;
+  position:absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
-  height: 50px;
   background: #002f5f;
-  color: #fff;
+  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .last {
