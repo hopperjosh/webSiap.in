@@ -211,10 +211,11 @@ body::after {
 .back-section h2 {
   margin: 0;
   color: #002f5f;
+  font-size: 25px;
 }
 
 .back-icon {
-  font-size: 50px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -233,6 +234,7 @@ body::after {
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  border: solid 8px #183b65;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
@@ -247,14 +249,15 @@ body::after {
 }
 
 .overlay h3 {
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 
