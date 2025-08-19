@@ -204,9 +204,9 @@ body::after {
   display: flex;
   align-items: center;
   padding: 15px;
-  font-size: 22px;
+  font-size: 15px;
   gap: 10px;
-  border-bottom: 3px solid #0f3a63;
+  border-bottom: 3px solid #183b65;
 }
 .back-section h2 {
   margin: 0;
@@ -214,7 +214,6 @@ body::after {
 }
 
 .back-icon {
-  font-size: 50px;
   cursor: pointer;
 }
 
@@ -231,8 +230,8 @@ body::after {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: #183b65
-;
+  background-color: #183b65;
+  height: 20;
   border-radius: 20px;
   padding: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
