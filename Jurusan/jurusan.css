@@ -242,7 +242,7 @@ body::after {
   font-weight: bold;
   padding: 15px 20px;
   border: none;
-  border-radius: 50px;
+  border-radius: 20px 20px 5px 5px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -251,8 +251,6 @@ body::after {
 }
 
 .faculty.expanded .faculty-header {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 .icon {
