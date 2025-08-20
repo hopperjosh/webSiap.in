@@ -374,7 +374,7 @@ body {
   
   .card-container {
     display:flex;
-    justify-content: flex-start;
+    align-items: flex-start;
     margin: 50px;
     background-color: #163c65;
     border-radius: 20px;
@@ -395,6 +395,7 @@ body {
 
   .photo-frame {
     position: relative;
+    align-items: flex-start;
     background-color: white;
     width: 120px;
     height: 175px;
@@ -402,8 +403,6 @@ body {
     border: #f8d75d solid 10px;
     overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
     border-color: #e0e6f0;
   }
 
