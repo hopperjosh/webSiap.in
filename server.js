@@ -39,6 +39,18 @@ app.get("/api/user", async (req, res) => {
 //   res.json(data);
 // });
 
+// INSERT data ke tabel "cvUsers"
+app.post("/api/cv", async (req, res) => {
+  const { pengalaman, prestasi, keahlian } = req.body;
+
+  const { data, error } = await supabase
+    .from("cvUsers") // pastikan tabel ini ada di Supabase
+    .insert([{ pengalaman, prestasi, keahlian }]);
+
+  if (error) return res.status(500).json({ error: error.message });
+  res.json({ message: "CV berhasil disimpan", data });
+});
+
 app.listen(PORT, () => {
   console.log(`Server berjalan di http://localhost:${PORT}`);
 });
