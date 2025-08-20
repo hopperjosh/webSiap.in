@@ -233,8 +233,6 @@ body::after {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
-  border: solid 8px #183b65;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
@@ -249,15 +247,14 @@ body::after {
 }
 
 .overlay h3 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 5px;
-  font-weight: bold;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 
