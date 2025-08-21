@@ -1,23 +1,26 @@
 body {
-  /* position: relative; */
-  font-family: Helvetica, sans-serif;
-  background: #ffffff;
-  font-family: Arial, sans-serif;
-}
+            position: relative;
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            background: #ffffff;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-body::after {
-  content: '';
-  display: block;
-  height: 50px;
-  /* Set same as footer's height */
-}
+        body::after {
+            content: '';
+            display: block;
+            height: 50px;
+            /* Set same as footer's height */
+        }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        /* ========================== HEADER ======================== */
 /* ======= Search Bar ======= */
 .search-bar {
   display: flex;
@@ -194,301 +197,284 @@ body::after {
 
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #F6F9FE;
-}
+        /* ========================== CONTENT ======================== */
+        .back-section {
+            margin-top: 70px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            font-size: 22px;
+            gap: 10px;
+            border-bottom: 3px solid #0f3a63;
+            width: 100%; /* Memastikan full width */
+        }
 
-.card-container {
- display:flex;
-  background-color: #163c65;
-  border-radius: 20px;
-  color: white;
-  border: #A3C5EB solid 10px;
- width: 900px;
-  height: auto;
-  padding: 50px;
-  margin-top: 70px;
- margin-left:150px ;
- justify-content: center;
- align-items: center;
+        .back-section h2 {
+            margin: 0;
+            color: #002f5f;
+            font-size: 25px;
+        }
 
-}
+        .back-icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
 
-.photo-section {
-  flex: 1;
-  display: flex;
-  justify-content: left;
-  align-items: left;
-}
+        /* ========================== PROFIL MAIN CONTENT CSS ======================== */
+        /* Container untuk memastikan konten berada di bawah back-section */
+        .main-content {
+            width: 100%;
+            padding-top: -10px; /* Spacing dari back-section */
+        }
 
-.photo-frame {
-  position: relative;
-  background-color: white;
-  width: 240px;
-  height: 350px;
-  border-radius: 30px;
-  border: #f8d75d solid 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-color: #e0e6f0;
-}
+        /* Student Card */
+        .student-card {
+            background: linear-gradient(135deg, #183d6f, #002f5f);
+            margin: 20px;
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 425px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-.profile-pic {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+        .student-card-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-.camera-icon {
-  position: absolute;
-  color: #f8d75d;
-  border-color: #f8d75d;
-  bottom: 15px;
-  left: 15px;
-  width: 50px;
-  height: 50px;
-}
+        .student-card-title {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #f8d75d;
+        }
 
-.info-section {
-  flex: 2;
-  padding-left: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+        .card-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
 
-.info-section h1 {
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 1px;
-  text-shadow: 2px 2px 0 #0e2546;
-}
+        .student-photo {
+            width: 90px;
+            height: 110px;
+            background: #ddd;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(248, 215, 93, 0.5);
+            flex-shrink: 0;
+        }
 
-.data-group {
-  font-size: 18px;
-}
+        .student-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.data-item {
-  margin-bottom: 10px;
-}
+        .camera-icon {
+            position: absolute;
+            bottom: 3px;
+            right: 3px;
+            width: 20px;
+            height: 20px;
+            background: #002f5f;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8d75d;
+            cursor: pointer;
+            border: 1px solid #f8d75d;
+        }
 
-.label {
-  display: block;
-  font-size: 13px;
-  color: #cfdff5;
-  letter-spacing: 1px;
-}
+        .camera-icon:hover {
+            background: #f8d75d;
+            color: #002f5f;
+        }
 
-.value {
-  font-size: 20px;
-  font-weight: 600;
-  color: white;
-}
+        .student-info {
+            flex: 1;
+        }
 
-.data-row {
-  display: flex;
-  gap: 40px;
-  margin-top: 10px;
-}
+        .student-name {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #f8d75d;
+        }
 
-.univ-box {
-  background-color: white;
-  color: #153765;
-  margin-top: 15px;
-  padding: 10px;
-  border-radius: 15px;
-  height: 200px;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  
-}
+        .student-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 11px;
+        }
 
-.univ-logos {
-  display: flex;
-  align-items: center;
-  justify-content:center ;
-  gap: 5%;
-}
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+        }
 
-.univ-logos img {
-  width: 150px;
-  height: 100%;
-}
+        .detail-label {
+            opacity: 0.8;
+            margin-bottom: 2px;
+            font-size: 10px;
+            color: #f8d75d;
+        }
 
+        .detail-value {
+            font-weight: bold;
+            color: white;
+        }
 
+        .university-logos {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+        }
 
+        .university-logos .logo {
+            width: 35px;
+            height: 35px;
+            background: rgba(248, 215, 93, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8d75d;
+        }
 
-.menu {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 50px;
-}
+        /* Menu Buttons */
+        .menu-buttons {
+            padding: 0 20px 20px;
+            max-width: 425px;
+            margin: 0 auto;
+        }
 
-.menu-btn {
-  padding: 30px 15px;
-  border: none;
-  border-radius: 12px;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  font-weight: 600;
-  text-decoration: none;
-}
+        .menu-button {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 12px;
+            border: none;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.menu-btn i {
-  margin-right: 10px;
-}
+        .menu-button span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
 
-.grey {
-  background: #A3C5EB;
-  color: #1c3553;
-}
+        .edit-profile {
+            background: #183d6f;
+            color: white;
+        }
 
-.yellow {
-    margin-top: 10p;
-  background: #ffd950;
-  color: #1c3553;
-}
+        .edit-profile:hover {
+            background: #002f5f;
+            transform: translateY(-1px);
+        }
 
-.footer {
-  background: #002f5f;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-.last {
-  cursor: pointer;
-  color: #ffffff;
-}
+        .about-us {
+            background: #183d6f;
+            color: white;
+        }
 
+        .about-us:hover {
+            background: #002f5f;
+            transform: translateY(-1px);
+        }
 
-@media screen and (max-width: 1170px) and (max-height: 2532px) {
-  
-  .card-container {
-    display:flex;
-    align-items: flex-start;
-    margin: 50px;
-    background-color: #163c65;
-    border-radius: 20px;
-    color: white;
-    border: #A3C5EB solid 10px;
-    width: auto;
-    height: auto;
-    padding: 35px;
-    /* justify-content: center;
-    align-items: center; */
-  }
+        .yellow-button {
+            background: #f8d75d;
+            color: #002f5f;
+        }
 
-  .photo-section {
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-  }
+        .yellow-button:hover {
+            background: #f1c40f;
+            transform: translateY(-1px);
+        }
 
-  .photo-frame {
-    position: relative;
-    align-items: flex-start;
-    background-color: white;
-    width: 120px;
-    height: 175px;
-    border-radius: 30px;
-    border: #f8d75d solid 10px;
-    overflow: hidden;
-    display: flex;
-    border-color: #e0e6f0;
-  }
+        .arrow-icon {
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
 
-  .profile-pic {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+        /* Footer Text Section */
+        .footer-text {
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 10px;
+            color: #636e72;
+            line-height: 1.3;
+            background: #f8f9fa;
+            max-width: 425px;
+            margin: 0 auto 20px auto;
+            border-radius: 0 0 10px 10px;
+        }
 
-  .camera-icon {
-    position: absolute;
-    color: #f8d75d;
-    border-color: #c0ae6d;
-    bottom: 15px;
-    left: 15px;
-    width: 50px;
-    height: 50px;
-  }
+        /* Placeholder untuk foto siswa */
+        .photo-placeholder {
+            background: linear-gradient(45deg, #bdc3c7, #ecf0f1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            color: #7f8c8d;
+            text-align: center;
+            height: 100%;
+        }
 
-  .info-section {
-    flex: 2;
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px;
-  }
+        /* Responsive untuk mobile */
+        @media (max-width: 425px) {
+            .student-card {
+                margin: 15px;
+            }
 
-  .info-section h1 {
-    font-size: 34px;
-    font-weight: 700;
-    margin-bottom: 1px;
-    text-shadow: 2px 2px 0 #0e2546;
-  }
+            .menu-buttons {
+                padding: 0 15px 15px;
+            }
 
-  .data-group {
-    font-size: 18px;
-  }
+            .student-details {
+                font-size: 10px;
+            }
 
-  .data-item {
-    margin-bottom: 10px;
-  }
+            .menu-button {
+                padding: 11px 18px;
+                font-size: 14px;
+            }
+        }
 
-  .label {
-    display: block;
-    font-size: 13px;
-    color: #cfdff5;
-    letter-spacing: 1px;
-  }
+        /* ========================== FOOTER ======================== */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background: #002f5f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
 
-  .value {
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-  }
-
-  .data-row {
-    display: flex;
-    gap: 40px;
-    margin-top: 10px;
-  }
-
-  .univ-box {
-    background-color: white;
-    color: #153765;
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 15px;
-    height: 150px;
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    
-  }
-
-  .univ-logos {
-    display: flex;
-    align-items: center;
-    justify-content:center ;
-    gap: 5%;
-  }
-
-  .univ-logos img {
-    width: 100px;
-    height: 50%;
-  }
-
-
-}
+        .last {
+            cursor: pointer;
+            color: #ffffff;
+        }

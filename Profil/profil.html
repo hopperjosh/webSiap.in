@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../gambar/Favicon.png" />
     <title>Siap.in</title>
+    <link rel="icon" type="image/png" href="../gambar/Favicon.png" />
     <link rel="stylesheet" href="profil.css" />
-  </head>
-
-
+</head>
 <body>
-    <script>
-      document
-        .getElementById("btnLogin")
-        .addEventListener("click", function () {
-          window.location.href = "Login/login.html";
-        });
-    </script>
-
-      <!------------------------------ header ----------------------------------->
+    
+<!------------------------------ header ----------------------------------->
 
      <header class="trigger-sidebar">
       <!-- Trigger Sidebar -->
@@ -98,70 +89,281 @@
       </aside>
     </header>
 
-    <h1 class="title"><i class="fas fa-arrow-left"></i> Profil</h1>    
-      <div class="card-container">
-        <div class="photo-section">
-          <div class="photo-frame">
-            <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg" alt="Foto Profil" class="profile-pic">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" alt="Camera Icon" fill="currentColor" class="camera-icon" viewBox="0 0 16 16">
-              <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
-              <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+    <!------------------------------ isi ----------------------------------->
+    <section class="back-section">
+        <span class="back-icon" onclick="window.history.back()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#183b65" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
             </svg>
-          </div>
+        </span>
+        <h2>Profil</h2>
+    </section>
+
+    <!-- Main Content Profil - Kontainer untuk memastikan konten berada di bawah back-section -->
+    <div class="main-content">
+        <!-- Student Card -->
+        <div class="student-card">
+            <div class="student-card-header">
+                <div class="student-card-title">STUDENT CARD</div>
+            </div>
+
+            <div class="card-content">
+                <div class="student-photo">
+                    <div class="photo-placeholder" id="studentPhoto">
+                        Foto Siswa
+                    </div>
+                    <div class="camera-icon" onclick="changePhoto()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                            <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                            <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="student-info">
+                    <div class="student-name" id="studentName">Raka Yudha Kencana</div>
+
+                    <div class="student-details">
+                        <div class="detail-item">
+                            <span class="detail-label">NAMA</span>
+                            <span class="detail-value" id="displayName">Raka Yudha Kencana</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">KELAS</span>
+                            <span class="detail-value" id="studentClass">XI IPA</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">SEKOLAH</span>
+                            <span class="detail-value" id="schoolName">SMAN 4 DEPOK</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Universitas Tujuan</span>
+                            <span class="detail-value" id="targetUniversity">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="university-logos">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0L.39 5.745a.5.5 0 0 0 0 .91L8.211 10.2a.5.5 0 0 0 .422 0l7.399-3.544a.5.5 0 0 0 0-.91zM3.5 11.662l4.079 1.956a.5.5 0 0 0 .422 0L12.5 11.662V9.5a.5.5 0 0 0-.5-.5H4a.5.5 0 0 0-.5.5z"/>
+                    </svg>
+                </div>
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                </div>
+            </div>
         </div>
 
-    <div class="info-section">
-      <h1>STUDENT CARD</h1>
+        <!-- Menu Buttons -->
+        <div class="menu-buttons">
+            <button class="menu-button edit-profile" onclick="editProfile()">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                    Edit Profil
+                </span>
+            </button>
 
-      <div class="data-group">
-        <div class="data-item">
-          <span class="label">NAMA</span>
-          <span class="value">Raka Yudha Kencana</span>
+            <button class="menu-button about-us" onclick="goToAboutUs()">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                    </svg>
+                    Tentang Kami
+                </span>
+            </button>
+
+            <button class="menu-button yellow-button" onclick="goToRapor()">
+                <span>Masukkan Nilai Rapormu</span>
+                <span class="arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </span>
+            </button>
+
+            <button class="menu-button yellow-button" onclick="goToSertifikat()">
+                <span>Masukkan Sertifikatmu</span>
+                <span class="arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </span>
+            </button>
+
+            <button class="menu-button yellow-button" onclick="goToCV()">
+                <span>Ayo Buat CV-mu</span>
+                <span class="arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                    </svg>
+                </span>
+            </button>
         </div>
-        <div class="data-row">
-          <div class="data-item">
-            <span class="label">KELAS</span>
-            <span class="value">XII IPA</span>
-          </div>
-          <div class="data-item">
-            <span class="label">SEKOLAH</span>
-            <span class="value">SMAN 4 DEPOK</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="univ-box">
-        <p>Universitas Tujuan</p>
-        <div class="univ-logos">
-          <img src="https://www.pngkit.com/png/full/406-4061748_logo-ui-png-universitas-indonesia.png" alt="UI" />
-          <img src="https://tse2.mm.bing.net/th/id/OIP.BMb9rV3uv-S-HYXB3lvUjQHaHa?pid=Api&P=0&h=180.png" alt="UGM" />
-        <!-- Tambah logo universitas di sini jika ada -->
-      </div>
-    </div>
-  </div>
-  </div>
     </div>
 
-    <div class="menu">
-      <a href="Login/login.html" class="menu-btn grey">Edit Profil</a>
-      <a href="Login/login.html" class="menu-btn grey">Tentang Kami</a>
-      <a href="Login/login.html" class="menu-btn yellow">Masukkan Nilai Rapormu</a>
-      <a href="Login/login.html" class="menu-btn yellow">Masukkan Sertifikatmu</a>
-      <a href="https://partyrock.aws/u/ahli104/Qu_KU0PCJ/CVSiap.In" target="_blank" class="menu-btn yellow">Ayo Buat CV <CV-mu></CV-mu></a>
-    </div>
-  </div>
-
-
-
-
-
-  
-  <footer class="footer">
-      <p class="last">About Us | Follow Us | Company</p>
+    <!------------------------------ footer ----------------------------------->
+    <footer class="footer">
+        <p class="last">About Us | Follow Us | Company</p>
     </footer>
-  </body>
 
+    <script>
+        // Data siswa (nanti akan diambil dari Supabase)
+        let studentData = {
+            name: "Raka Yudha Kencana",
+            class: "XI IPA",
+            school: "SMAN 4 DEPOK",
+            targetUniversity: "-",
+            photo: null
+        };
 
+        // Fungsi untuk memuat data dari Supabase
+        async function loadStudentData() {
+            try {
+                // Contoh implementasi Supabase (sesuaikan dengan setup JS yang diberikan guru)
+                // const { data, error } = await supabase
+                //     .from('students')
+                //     .select('*')
+                //     .eq('id', getCurrentStudentId())
+                //     .single();
+                
+                // if (data) {
+                //     updateStudentDisplay(data);
+                // }
+                
+                console.log("Data akan dimuat dari Supabase");
+                // Untuk sementara gunakan data default
+                updateStudentDisplay(studentData);
+            } catch (error) {
+                console.error("Error loading data:", error);
+            }
+        }
 
+        // Fungsi untuk mengupdate tampilan data siswa
+        function updateStudentDisplay(data) {
+            const studentNameEl = document.getElementById('studentName');
+            const displayNameEl = document.getElementById('displayName');
+            const studentClassEl = document.getElementById('studentClass');
+            const schoolNameEl = document.getElementById('schoolName');
+            const targetUniversityEl = document.getElementById('targetUniversity');
+            const studentPhotoEl = document.getElementById('studentPhoto');
+            
+            if (studentNameEl) studentNameEl.textContent = data.name || "Nama Siswa";
+            if (displayNameEl) displayNameEl.textContent = data.name || "Nama Siswa";
+            if (studentClassEl) studentClassEl.textContent = data.class || "Kelas";
+            if (schoolNameEl) schoolNameEl.textContent = data.school || "Nama Sekolah";
+            if (targetUniversityEl) targetUniversityEl.textContent = data.targetUniversity || "-";
+            
+            if (data.photo && studentPhotoEl) {
+                studentPhotoEl.innerHTML = `<img src="${data.photo}" alt="Foto Siswa">`;
+            }
+        }
+
+        // Fungsi untuk mengganti foto
+        function changePhoto() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const studentPhotoEl = document.getElementById('studentPhoto');
+                        if (studentPhotoEl) {
+                            studentPhotoEl.innerHTML = `<img src="${e.target.result}" alt="Foto Siswa">`;
+                        }
+                        // Simpan ke Supabase
+                        uploadPhoto(file);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+            input.click();
+        }
+
+        // Event handlers untuk tombol-tombol
+        function editProfile() {
+            // Redirect ke halaman edit profil
+            window.location.href = 'edit-profile.html';
+        }
+
+        function goToAboutUs() {
+            // Redirect ke halaman tentang kami
+            window.location.href = '../About/about.html';
+        }
+
+        function goToRapor() {
+            // Redirect ke halaman input rapor
+            window.location.href = 'rapor.html';
+        }
+
+        function goToSertifikat() {
+            // Redirect ke halaman input sertifikat
+            window.location.href = 'sertifikat.html';
+        }
+
+        function goToCV() {
+            // Redirect ke halaman buat CV
+            window.location.href = 'cv.html';
+        }
+
+        // Contoh fungsi untuk menyimpan data ke Supabase
+        async function saveStudentData(data) {
+            try {
+                // const { error } = await supabase
+                //     .from('students')
+                //     .upsert(data);
+                
+                // if (error) throw error;
+                
+                console.log("Data berhasil disimpan ke Supabase");
+            } catch (error) {
+                console.error("Error saving data:", error);
+            }
+        }
+
+        // Contoh fungsi untuk upload foto ke Supabase Storage
+        async function uploadPhoto(file) {
+            try {
+                // const { data, error } = await supabase.storage
+                //     .from('student-photos')
+                //     .upload(`${getCurrentStudentId()}.jpg`, file);
+                
+                // if (error) throw error;
+                
+                console.log("Foto berhasil diupload");
+            } catch (error) {
+                console.error("Error uploading photo:", error);
+            }
+        }
+
+        // Fungsi untuk mendapatkan ID siswa saat ini
+        function getCurrentStudentId() {
+            // Implementasi sesuai dengan sistem autentikasi Anda
+            // Bisa dari session, localStorage, atau cookie
+            return "student_123"; // Contoh ID
+        }
+
+        // Inisialisasi saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            loadStudentData();
+        });
+
+        // Event listener untuk tombol login (jika ada)
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnLogin = document.getElementById("btnLogin");
+            if (btnLogin) {
+                btnLogin.addEventListener("click", function () {
+                    window.location.href = "Login/login.html";
+                });
+            }
+        });
+    </script>
 </body>
 </html>
